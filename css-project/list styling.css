@@ -1,0 +1,24 @@
+ul {
+    list-style-type: lower-armenian;
+    list-style-position: inside;
+    list-style-image: none;
+    /* list-style: short hand بيقبل 3 خواص;
+    type
+    position
+    img  */
+
+
+}
+
+li {
+    background-color: #EEE;
+    margin-bottom: 20px;
+}
+
+/* لو عايز اعمل reset  
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+*/

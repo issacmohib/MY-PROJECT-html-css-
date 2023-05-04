@@ -1,0 +1,44 @@
+.first {
+    width: 51px;
+    background-color: white;
+    /* background-position: left top; */
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-width: 5px;
+    border-color: red;
+    border-style: solid;
+    outline-width: 5px;
+    outline-color: black;
+    outline-style: solid;
+}
+
+.second {
+    width: 51px;
+    background-color: white;
+    /* background-position: center top; */
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    border-width: 5px;
+    border-color: green red;
+    border-style: solid;
+    outline-width: 5px;
+    outline-color: black;
+    outline-style: solid;
+}
+
+.third {
+    width: 51px;
+    background-color: white;
+    /* background-position: right top; */
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border-width: 5px;
+    border-color: yellow red green blue;
+    border-style: dashed;
+    outline-width: 5px;
+    outline-color: black;
+    outline-style: solid;
+}

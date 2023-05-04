@@ -1,0 +1,41 @@
+.first-1 {
+    font-size: large;
+    width: 400px;
+    border-left: 5px;
+    border-color: blueviolet;
+    border-left-style: solid;
+
+}
+
+.second-2 {
+    font-size: large;
+    width: 400px;
+    visibility: hidden;
+    border-left: 5px;
+    border-color: red;
+    border-left-style: solid;
+
+
+}
+
+.third-3 {
+    font-size: large;
+    width: 400px;
+    border-left: 5px;
+    border-color: blue;
+    border-left-style: solid;
+
+}
+
+div {
+    background-color: #ddd;
+    padding: 10px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+div:hover {
+    overflow: visible;
+}

@@ -1,0 +1,607 @@
+/* 
+  Target All Paragraphs
+*/
+h1 {
+    color: aliceblue;
+}
+
+p {
+    color: chocolate;
+    font-size: large;
+}
+
+.me {
+    color: aqua;
+    font-size: larger;
+}
+
+#hi {
+    color: blue;
+    font-size: small;
+}
+
+p {
+    color: green;
+}
+
+p {
+    color: red;
+}
+
+div {
+    /* background-color: blue; */
+
+    /*  color name */
+
+    /* background-color: rgb(00, 55, 00 /50%); */
+
+    /*  red green blue alpha channel */
+
+    /* background-color: #ff0000; */
+
+    /*  color hexa code */
+
+    /* background-image: url(../wallpaperflare.com_wallpaper\ \(1\).jpg); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: contain;
+
+    /* padding  */
+
+    padding-top: 10px;
+    padding-right: 150px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+
+    /* margin  */
+
+    width: 70%;
+    margin: auto;
+
+    /* border  */
+
+    border-width: 10px;
+    /* border-color: blue; */
+    /* border-style: solid; */
+
+    /* border: 10px solid blue; كود مختصر  */
+
+    /* border  */
+    /* border: 10px red solid; */
+
+}
+
+/* <!-- grouping multiple selectors  --> */
+.one {
+    border-bottom: 2px solid red;
+    color: red;
+}
+
+.two {
+    border-bottom: 2px solid green;
+    color: green;
+}
+
+.three {
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+
+.four {
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.one,
+.two,
+.three,
+.four,
+.my-p {
+    padding: 15px;
+    margin: 12px 0;
+    background-color: #ededed;
+}
+
+/* nesting  */
+div .special {
+    color: red;
+}
+
+.e {
+    background-color: red;
+    padding: 10px;
+    display: inline-block;
+    max-width: 400px;
+    /* min-width: 400px; */
+    width: fit-content;
+
+}
+
+/* overflow  */
+.soo {
+    width: 150px;
+    height: 150px;
+    background-color: #EEE;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow: scroll;
+}
+
+/* text (color , shadow)  */
+.aii {
+    background-color: #f9f9f9;
+    color: rebeccapurple;
+    text-shadow: 1px 1px 1px red;
+    /* text-shadow: (الافقي)h-shadow  (الراسي)v-shadow (نسبة الشفافية)blur color  ;  */
+}
+
+/* text-alignment  */
+.all {
+    background-color: #f9f9f9;
+    text-align: center;
+    direction: rtl;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* text (decoration-transformation)  */
+.at {
+    background-color: #f9f9f9;
+    text-decoration: overline;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+/* .p {
+    background-color: #EEE;
+    letter-spacing: 1px;
+    text-indent: 1px;
+    line-height: 160%;
+    word-spacing: 1px;
+    width: 300px;
+    white-space: nowrap;
+    word-break: break-word;
+} */
+/* text overflow  */
+.p {
+    background-color: #ddd;
+    padding: 10px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* دي بديل اني احط تايتل في ال اش تي ام ال  */
+.p hover {
+    overflow: visible;
+}
+
+/* inheritance  */
+.v {
+    text-align: center;
+    padding: 20px;
+    background-color: #EEE;
+    /* font-size: 26px; */
+    border: 2px solid blue;
+}
+
+div p {
+    border: 2px solid;
+    border-color: inherit;
+    padding: inherit;
+}
+
+/* font family  */
+
+/* .with-ser {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.san-ser {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+.with-ser,
+.san-ser {
+    background-color: #EEE;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    ;
+}
+
+/* font size  */
+/* body {
+    font-size: 40px;
+} */
+
+/* دا لو قلنا عرض الصفحة 900 يبقي1% = 9 يعني 9 في 1 = 45 بيكسل  */
+/* div {
+    font-size: 5vw;
+} */
+
+/* بياخد الساحة من ال روت بتاع الصفحة بتاع ال الاتش تي ام الل اللي هو الاصل 
+(16 px)  */
+/* 2 rem = 32 px  */
+
+/* div span {
+    font-size: 2rem;
+} */
+
+/* font (style-variant-weight)  */
+div {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+div span {
+    text-transform: uppercase;
+}
+
+/* mouse cursor  */
+button {
+    background: brown;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px dashed blue;
+    text-shadow: yellow 1px 1px 1px;
+}
+
+/* float and clear  */
+
+.parent {
+    padding: 10px;
+    background-color: red;
+    overflow: hidden;
+
+}
+
+.parent div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #EEE;
+    width: 25%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+/* calculation  */
+body {
+    margin: 0px;
+}
+
+.parent div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: red;
+    float: left;
+    width: calc((100% - 60px) / 4);
+    margin-left: 10px;
+}
+
+/*
+  Content Width Is: 100%
+  6 Spaces  10px * 6 => 60px From Content Width
+  100% - 60px Available Space
+  5 Elements The Width Is: (100% - 60px) / 5
+*/
+/* pseudo classes  */
+.one {
+    background-color: red;
+    color: white;
+}
+
+.two {
+    background-color: #EEE;
+    width: 100px;
+    height: 100px;
+}
+
+.a {
+    color: green;
+    text-decoration: none;
+}
+
+.a:hover {
+    color: red;
+}
+
+.a:visited {
+    color: yellow;
+}
+
+div:empty {
+    border: 5px black dashed;
+}
+
+.ch:checked {
+    display: none;
+}
+
+.in:focus {
+    border-color: aqua;
+    outline: none;
+}
+
+/* Pseudo Elements ( First Letter, First Line, Selection) */
+.one span {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.two::first-letter {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.three::first-line {
+    font-weight: bold;
+    color: green;
+}
+
+::selection {
+    background-color: black;
+    color: yellow;
+}
+
+/* Pseudo Elements –( Before, After, Content ) */
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.one {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+
+.one::after {
+    content: "";
+    /* اساسي */
+    position: absolute;
+    /*عشان نحركة براحتنا  */
+    width: 5px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: #009688;
+}
+
+.one::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 0;
+    height: 0;
+    background-color: white;
+    margin-top: -10px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #009688 transparent transparent;
+}
+
+.user {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+/*
+
+  Vendors Prefixes
+
+  Chrome
+  Safari
+  Firefox
+  IE, Edge
+  Opera
+
+  [1] New CSS Feature Appeared
+  [2] Browsers Tests The Feature In Version X
+  [3] Browsers Add Prefix To Give Developers The Ability To Use It
+  [4] The Feature Is Fully Supported In Version Y, No Need For Prefix
+
+  -webkit- => Chrome, Safari, New Opera Version
+  -moz- => Firefox
+  -ms- => Ie, Edge
+  -o- => Old Version of Opera
+
+*/
+
+/* .class {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+} */
+
+/*
+    [1] Most of Users Is Using Modern Browsers
+    [2] Vs Code Addon To Add The Prefix
+    [3] Task Runner
+  */
+/* border-raduis   */
+div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    margin: 20px auto;
+    border-radius: 6px;
+    /* border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px; */
+}
+
+/* box-shadow  */
+
+div {
+    padding: 20px;
+    background-color: #eee;
+    margin: 20px auto;
+    width: 300px;
+    box-shadow:
+        0 0 10px 0 #F10000,
+        0 0 10px 0 #000,
+        0 0 10px 0 #080,
+        0 0 10px 0 #00f,
+        0 0 10px 0 yellow;
+}
+
+/* The Box Model And Box Sizing  */
+
+* {
+    /*دا عشان لو عايز اعمل علي كل العناصر*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.one {
+    background-color: #eee;
+    width: 300px;
+    float: left;
+    padding: 10px;
+    border: 1px solid red;
+}
+
+/* transition  */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.one {
+    background-color: #EEE;
+    width: 200px;
+    height: 100px;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+    transition-property: width;
+    transition-timing-function: linear;
+}
+
+.one:hover {
+    width: 280px;
+    height: 120px;
+}
+
+/* important  */
+.one {
+    background-color: #EEE !important;
+}
+
+/* margin collapse  */
+/*
+  The Margin Collapse
+  [1] Only Vertical Margin Collapse
+  [2] Bigger Margin Wins
+  [3] Margin Collapsing With Elements Without Anything Between
+  [4] Nesting Does Not Prevent Collapse
+*/
+.parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.parent .one,
+.parent .two {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.one {
+    background-color: #ddd;
+}
+
+.two {
+    background-color: #aaa;
+}
+
+.up {
+    background-color: red;
+    color: white;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.down {
+    background-color: green;
+    color: white;
+    height: 80px;
+    margin-top: 40px;
+}
+
+/*
+  Filters
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    transition: 0.3s;
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(50%);
+}
+
+img:hover {
+    filter: grayscale(0);
+}
+
+/* gradient  */
+
+/*
+  Gradients
+  linear-gradient(Direction || Angle, Color Stop 1, Color Stop 2, ....)
+*/
+
+/* Pointer Event and Caret Color  */
+
+input {
+    caret-color: red;
+}
+
+a {
+    pointer-events: none;
+}

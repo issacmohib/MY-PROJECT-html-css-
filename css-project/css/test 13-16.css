@@ -1,0 +1,55 @@
+/* div .child .title {
+    color: red;
+}
+
+div .title {
+    color: blue;
+}
+
+
+/* p {
+    color: green;
+} */
+
+/* p,
+.title {
+    color: green;
+} */
+.one {
+    padding: 10px;
+    background-color: red;
+    width: fit-content;
+    max-width: 400px;
+}
+
+.two {
+    padding: 10px;
+    background-color: red;
+    width: fit-content;
+    max-width: 400px;
+}
+
+.three {
+    padding: 10px;
+    background-color: red;
+    width: fit-content;
+    max-width: 400px;
+}
+
+.four {
+    padding: 10px;
+    background-color: red;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.one,
+.two,
+.three,
+.four {
+    color: aliceblue;
+    text-transform: capitalize;
+
+}

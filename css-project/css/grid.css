@@ -1,0 +1,243 @@
+/* Grid – Parent – Template Columns  */
+
+/*
+  Grid
+  Parent
+  - display: grid | inline-grid
+  - grid-template-columns: [Number Of Columns In] => [Px, %, Auto, Repeat]
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(2, auto) repeat(2, 1fr);
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Grid – Parent – Template Rows And Gap  */
+
+/*- grid-template-rows: [Number Of Rows In] => [Px, %, Auto, Fraction, Repeat, Mix]
+  - gap: [Row Gap] [Column Gap]*/
+
+
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* row-gap: 10px;
+  column-gap: 10px; */
+    gap: 10px 10px;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Grid – Parent – Justify And Align Content  */
+
+/*- justify-content
+  - align-content */
+
+/* .parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 10px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+} */
+
+/* Grid – Parent – Complete Layout With Template Areas  */
+
+
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    /*عشان اخلي اليست جنب بعض مش فوق بعض*/
+}
+
+.page {
+    height: 100vh;
+    /*بتوزع العناصر في الصفحة كلها بالطول*/
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "logo logo nav nav nav nav nav nav nav nav"
+        "cont cont cont cont cont cont cont . side side"
+        "foot foot foot foot foot foot foot foot foot foot";
+
+    /*  (دا كدا صف) هنا عندي 10 اعمدة يبقي طحيت 2 لوجو و8 ناف*/
+    /* (دا كدا الصف التاني) هنا عندي 10 اعمدة يبقي طحيت 8 كونت و2 سايد*/
+    /* (دا كدا الصف التالت) هنا عندي 10 اعمدة يبقي طحيت 10 فوت*/
+}
+
+h2 {
+    grid-area: logo;
+    /* ( ( grid-template-areas) دا الاسم اللي انا حاطه في logo) grid-area: logo;هنا باجي في كل كلاس انا مسميه في ال اتش تي ام ال واحط */
+    background-color: red;
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+}
+
+section {
+    grid-area: cont;
+    background-color: yellow;
+    color: white;
+}
+
+aside {
+    grid-area: side;
+    background-color: green;
+    color: white;
+}
+
+footer {
+    grid-area: foot;
+    background-color: black;
+    color: white;
+}
+
+/* Grid – Child – Grid Column And Row  */
+
+/* - grid-column: [Grid-Column-Start] [Grid-Column-End]
+  - grid-row: [Grid-Row-Start] [Grid-Row-End]*/
+.parent {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 10px;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.ti {
+    grid-row: span 2;
+}
+
+div.p {
+    grid-row: 1 / 5;
+}
+
+div.o {
+    grid-column: span 3;
+}
+
+/* Grid – Child – Grid Area And Trainings  */
+
+/* - grid-area: [Grid-Row-Start] [Grid-Column-Start] [Grid-Row-End] [Grid-Column-End]*/
+
+.go {
+    margin: 20px auto;
+    width: 800px;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px 10px;
+}
+
+.go div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.ry {
+    background-color: green;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 6;
+    grid-area: 2 / 2 / 5 / 6;
+}
+
+/* Grid – Min, Max And Autofill   */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    margin: 20px auto;
+    height: 500px;
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+/* .ME {
+    text-shadow: 0.5px 0.5px 0px orange, 1px 1px 0px blue, 1.5px 1.5px 0px blueviolet;
+} */
+
+/* .one {
+
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.two {
+    letter-spacing: 0px;
+    text-transform: capitalize;
+}
+
+.three {
+    letter-spacing: 0px;
+    text-transform: lowercase;
+} */
+.mi {
+    background-color: #eee;
+    padding: 10px;
+    width: 400px;
+    white-space: normal;
+
+}
+
+.me {
+    background-color: #eee;
+    padding: 10px;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.mo {
+    background-color: #eee;
+    padding: 10px;
+    width: 400px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+
+}

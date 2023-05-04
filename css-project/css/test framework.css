@@ -1,0 +1,106 @@
+body {
+    background-color: #eee;
+}
+
+/* test 1 */
+/* div {
+    flex-wrap: wrap;
+    background-color: coral;
+    width: 250px;
+    height: 500px;
+}
+
+span {
+    background-color: brown;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    background-color: #dddddd;
+    margin: 40px;
+    width: 500px;
+    padding: 25px;
+    position: relative;
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-width: 20px;
+    border-style: solid;
+    border-color: #dddddd;
+}
+
+.top::after {
+    top: calc(0% + -20px);
+    border-color: transparent transparent #dddddd transparent;
+}
+
+.right::after {
+    border-color: transparent transparent transparent #dddddd;
+    left: calc(100% + 20px);
+}
+
+.bottom::after {
+    top: calc(100% + 20px);
+    border-color: #dddddd transparent transparent transparent;
+}
+
+.left::after {
+    left: calc(0% + -20px);
+    border-color: transparent #dddddd transparent transparent;
+}

@@ -1,0 +1,67 @@
+/* div {
+    padding: 20px;
+    width: 500px;
+    margin: auto;
+
+
+
+}
+
+.assign-1-shape-1 {
+    background-color: rgb(138 43 226);
+
+}
+
+.assign-1-shape-2 {
+    background-color: rgb(138 43 226 /53%);
+}
+
+.assign-1-shape-3 {
+    background-color: rgb(138 43 226 /10%);
+} */
+/* div {
+    color: beige;
+    width: 400px;
+    height: 400px;
+    background-image: url(../wallpaperflare.com_wallpaper\ \(1\).jpg);
+} */
+
+.assign-2-shape-1 {
+    color: red;
+    width: 400px;
+    height: 400px;
+    background-image: url(../css-assignment-5-8.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+}
+
+.assign-2-shape-2 {
+    color: red;
+    width: 400px;
+    height: 400px;
+    background-image: url(../css-assignment-5-8.png);
+    background-position: 20% 0;
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-y; */
+}
+
+.assign-2-shape-3 {
+    color: red;
+    width: 400px;
+    height: 400px;
+    background-image: url(../css-assignment-5-8.png);
+    background-position: 0 20%;
+    background-repeat: repeat;
+    /* background-repeat: repeat-x; */
+}
+
+.assign-2-shape-4 {
+    color: red;
+    width: 400px;
+    height: 400px;
+    background-image: url(../css-assignment-5-8.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right bottom;
+}

@@ -1,0 +1,135 @@
+<form novalidate target="_blank" method="get">
+
+
+    <div>
+        <label>username</label>
+        <input type="text" required name="user" autofocus>
+    </div>
+    <br>
+    <div>
+        <label>range</label>
+        <input type="range" name="range" min="10" max="100" step="10">
+    </div>
+    <br>
+    <div>
+        <label>password</label>
+        <input type="password" required placeholder="write a comlex password" name="pass" minlength="10" maxlength="20">
+    </div>
+    <br>
+    <div>
+        <label>color</label>
+        <input type="color" name="color">
+    </div>
+    <br>
+    <div>
+        <label>email</label>
+        <input type="email" required value="eshak@mee" name="mail" disabled>
+    </div>
+    <br>
+    <div>
+        <label>number</label>
+        <input type="text" name="number" min="20" max="200" value="01010800081" readonly>
+    </div>
+    <br>
+    <hr>
+    <div>
+        <input id="win" type="radio" name="os" value="windows" checked>
+        <label for="win">windows</label>
+    </div>
+    <br>
+    <div>
+        <input id="mac" type="radio" name="os" value="mac" checked>
+        <label for="mac">mac</label>
+    </div>
+    <br>
+    <div>
+        <input id="lin" type="radio" name="os" value="linux" checked>
+        <label for="lin">linux</label>
+    </div>
+    <hr>
+    <div>
+        <input id="act" type="checkbox" name="categories" value="action">
+        <label for="act">action</label>
+    </div>
+    <br>
+    <div>
+        <input id="car" type="checkbox" name="categories" value="cartoon" checked>
+        <label for="car">cartoon</label>
+    </div>
+    <br>
+    <div>
+        <input id="fun" type="checkbox" name="categories" value="funny">
+        <label for="fun">funny</label>
+    </div>
+    <br>
+    <div>
+        <label for="book">chose book </label>
+        <select name="book" id="book">
+            <optgroup label="funny">
+                <option value="1">book 1</option>
+                <option value="2">book 2</option>
+                <option value="3">book 3</option>
+                <option value="4">book 4</option>
+                <option value="5">book 5</option>
+                <option value="6">book 6</option>
+            </optgroup>
+            <optgroup label="cartoon">
+                <option value="1" selected>book 1</option>
+                <option value="2">book 2</option>
+                <option value="3">book 3</option>
+                <option value="4">book 4</option>
+                <option value="5">book 5</option>
+                <option value="6">book 6</option>
+            </optgroup>
+            <optgroup label="action">
+                <option value="1">book 1</option>
+                <option value="2">book 2</option>
+                <option value="3">book 3</option>
+                <option value="4">book 4</option>
+                <option value="5">book 5</option>
+                <option value="6">book 6</option>
+            </optgroup>
+        </select>
+    </div>
+    <br>
+    <div>
+        <textarea name="subject" id="sub" cols="20" rows="4" placeholder="write a report"></textarea>
+        <label for="sub">report</label>
+    </div>
+    <hr>
+    <div>
+        <label for="fi">uplod notified</label>
+        <input type="file" id="fi">
+    </div>
+    <div>
+        <label for="ti">time</label>
+        <input type="time" id="ti">
+        <br>
+        <label for="da">date</label>
+        <input type="date" id="da">
+        <br>
+        <label for="mo">month</label>
+        <input type="month" id="mo">
+        <br>
+        <label for="ur">url</label>
+        <input type="url" id="ur">
+        <br>
+        <hr>
+        <div>
+            <label for="programming">programming book</label>
+            <input list="programming" name="prog">
+            <datalist id="programming">
+                <option value="c#">
+                <option value="c++">
+                <option value="python">
+                <option value="js">
+                <option value="css">
+                <option value="scala">
+            </datalist>
+            <br>
+            <hr>
+        </div>
+        <input type="submit" value="save ">
+        <input type="hidden">
+        <input type="reset" value="reset">
+</form>

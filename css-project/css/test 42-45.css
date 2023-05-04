@@ -1,0 +1,72 @@
+/* * {
+    box-sizing: border-box;
+}
+
+.parent {
+    background-color: #F2F2F4;
+    padding: 20px;
+    width: 500px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    transition: margin-top .5s ease;
+
+}
+
+.parent div {
+    background-color: #DEDEDC;
+    margin: 20px;
+    padding: 15px;
+    transition: margin-top .5s ease .5s;
+    -webkit-transition: margin-top .5s ease .5s;
+    -moz-transition: margin-top .5s ease .5s;
+    -ms-transition: margin-top .5s ease .5s;
+    -o-transition: margin-top .5s ease .5s;
+}
+
+.parent:hover {
+    margin-top: 40px;
+}
+
+.parent:hover .two {
+    margin-top: 50px;
+} */
+
+/* div {
+    background-color: #eee !important;
+    color: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    font-weight: bold;
+    font-size: 20px !important;
+    text-align: center;
+    width: 400px;
+    margin: 50px auto;
+    position: relative;
+
+}
+
+div::after {
+    content: "elzero";
+    position: absolute;
+    color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+} */
+
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+div {
+    color: var(--mainColor, red);
+    padding: var(--mainPadding, 10px);
+    border: 5px solid var(--mainColor, #000000);
+    margin: 10px;
+}

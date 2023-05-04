@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+/* test 1 */
+/* div.main.red {
+    color: red;
+} */
+
+/* test 2 */
+/* div.parent:first-child> :last-child {
+    color: red;
+} */
+
+/* test 3 */
+/* .parent:nth-child(2) {
+    color: red;
+} */
+
+/* test 4 */
+/* div[title]:not(.no-need, .parent div) {
+    color: red;
+} */
+
+/* test 5 */
+/* div:nth-of-type(2)>p+div {
+    color: red;
+} */
+
+/* test 6 */
+/* div>div:nth-last-of-type(2):not(.no-need div) {
+    color: red
+} */
+
+/* test 7 */
+/* div:nth-child(1)>h3:last-of-type+div {
+    color: red;
+} */
+
+/* test 8 */
+div :not(h3, div:nth-child(6n+1)) {
+    color: red;
+}

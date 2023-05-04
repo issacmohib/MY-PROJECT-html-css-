@@ -1,0 +1,94 @@
+.one div {
+    width: 300px;
+    height: 60px;
+    margin: 20px auto;
+    background-color: #eee;
+    text-align: center;
+    line-height: 55px;
+    font-weight: bold;
+
+}
+
+.one :empty {
+    background-color: red;
+}
+
+.two {
+    background-color: #eee;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    width: 300px;
+}
+
+.two::first-letter {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-left: -77px;
+}
+
+
+.four p {
+    background-color: #eee;
+    margin: 20px auto;
+    padding: 10px;
+    width: 350px;
+    border-left: 5px solid #e91e63;
+    position: relative;
+
+}
+
+.four p::before {
+    content: attr(data-person);
+    background-color: #eee;
+    padding: 7px;
+    position: absolute;
+    left: -25%;
+    top: 3px;
+    width: 50px;
+    float: left;
+}
+
+.four p::after {
+    content: "";
+    position: absolute;
+    border: 11px solid;
+    top: 9px;
+    border-color: transparent #e91e63 transparent transparent;
+    float: left;
+    left: -25px;
+}
+
+.three p {
+    width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #eee;
+    counter-increment: number;
+    position: relative;
+
+}
+
+.three p::before {
+    content: counter(number);
+    background-color: orangered;
+    color: white;
+    padding: 20px;
+    position: relative;
+    left: -20px;
+
+}
+
+.three p::after {
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 5px;
+    height: 58px;
+    float: right;
+    right: 0;
+    top: 0;
+}

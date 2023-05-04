@@ -1,0 +1,262 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    color: orangered;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    box-shadow: 4px 0 #FB7A52,
+        -4px 0 #03A9F4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
+}
+
+.parent div {
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    margin-right: 1%;
+    padding: 10px;
+    width: 25%;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.me {
+    width: 600px;
+    height: 300px;
+    background-color: #EEEEEE;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.me div {
+    background-color: #607D8B;
+    flex: 0 1 31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.me .one {
+    order: 6;
+    align-self: flex-end;
+}
+
+.me .two {
+    order: 5;
+
+}
+
+.me .three {
+    order: 2;
+    align-self: flex-start;
+
+}
+
+.me .four {
+    order: 3;
+
+}
+
+.me .five {
+    order: 4;
+
+}
+
+.me .six {
+    order: 1;
+}
+
+.hi {
+    width: 600px;
+    height: 300px;
+    background-color: #eee;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.hi div {
+    padding: 10px;
+    background-color: steelblue;
+    flex: 0 1 31%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hi .one {
+    align-self: flex-end;
+
+}
+
+.hi .two {
+    max-width: 50%;
+
+
+}
+
+.hi .three {
+    align-self: flex-end;
+
+}
+
+.hello {
+    width: 600px;
+    height: 300px;
+    width: 600px;
+    height: 300px;
+    background-color: #EEEEEE;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hello div {
+    flex: 0 1 15%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello .one {
+    order: 2;
+    background-color: orange;
+}
+
+.hello .two {
+    order: 3;
+    background-color: rgb(35, 173, 35);
+    align-self: flex-end;
+}
+
+.hello .three {
+    order: 4;
+    background-color: brown;
+}
+
+.hello .four {
+    order: 1;
+    background-color: blueviolet;
+    align-self: flex-end;
+
+}
+
+:root {
+    --colorPage: #EEEEEE;
+    --color-content: #DDDDDD;
+    --paddingPage: 1%;
+    --marginContent: 1%;
+    --padding-content: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.page {
+    max-width: 100%;
+    background-color: var(--colorPage);
+    padding: var(--paddingPage);
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: var(--marginContent);
+}
+
+.header .logo {
+    flex-basis: 8%;
+    background-color: var(--color-content);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.header .links {
+    flex-basis: 91%;
+    background-color: var(--color-content);
+    padding: var(--padding-content);
+    text-align: right;
+}
+
+/* main-area */
+.main-area {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: var(--marginContent);
+}
+
+.main-area .content {
+    flex-basis: 65%;
+    background-color: var(--color-content);
+    height: 500px;
+    padding: var(--padding-content);
+}
+
+.main-area .sidebar {
+    flex-basis: 34%;
+    background-color: var(--color-content);
+    height: 500px;
+    padding: var(--padding-content);
+}
+
+/* footer */
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex: 0 1 100%;
+    padding: var(--padding-content);
+    background-color: var(--color-content);
+}

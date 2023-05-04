@@ -1,0 +1,125 @@
+<!-- 
+Header=يضم العنصر <header>
+     مجموعةً من العناصر التمهيدية أو المساعدة على التنقل، وقت يحتوي على بعض عناصر الترويسات أو عناصر أخرى مثل شعار الموقع أو نموذج بحث وهلم جرًا.
+
+Nav=تمثيل قسم من الصفحة غرضه هو توفير روابط للتنقل، سواءً كانت ضمن المستند نفسه أو إلى مستندات أخرى.
+من أكثر الأمثلة شيوعًا هي القوائم وجداول المحتويات والفهارس.
+
+Main=تمثيل المحتوى الرئيسي لجسم المستند (العنصر <body>) 
+    أو لجزءٍ من المستند أو التطبيق. تضم منطقة المحتوى الرئيسي جميع المحتوى المرتبط مباشرةً بموضوع المستند أو يضيف عليه
+    ، أو يمثِّل الوظيفة الرئيسية للتطبيق.
+
+Aside=تمثيل جزء من المستند الذي يتعلق محتواه بشكلٍ أو بآخر بالمحتوى الرئيسي للمستند (ويُمثَّل هذا العنصر عادةً على شكل شريط جانبي)
+
+Picture=يُمثِّل العنصر <picture> 
+    حاويةً تُستخدَم لتحديد عدِّة مصادر عبر العنصر<source> 
+    لصورة <img> 
+    محتواة داخله؛ وسيختار المتصفح أنسب مصدر للصورة اعتمادًا على تخطيط الصفحة (أي الصندوق المحتوى فيه هذا العنصر)
+     والجهاز الذي ستُعرَض الصورة داخله (هل شاشته عادية أم عالية الدقة).
+
+Figure=تمثيل محتوى مستقل بحد ذاته، ويستخدم عادةً مع لافتة (عبر العنصر <figcaption>)، 
+    ويُشير عادةً إلى وحدة لا تتجزأ من المعلومات.
+
+Footer=تمثيل تذييل لأقرب عنصر تقسيمي (sectioning element)
+ أو للمستند كله؛ ويحتوي التذييل عادةً على معلومات حول كاتب المحتوى
+  أو معلومات حقوق النشر أو وصلات إلى مستندات مفيدة.
+
+FigCaption=تمثيل لافتة أو شرح مرتبط بصورة 
+أو رسمة أو غير ذلك مما يمكن أن يوصف عبر العنصر <figure> 
+    الذي يجب أن يكون الأب المباشر لهذا العنصر..
+
+Section=تمثيل قسم مستقل له وظيفة خاصة به ضمن مستند HTML، 
+ويكون له ترويسة عادةً، وهذا القسم ليس له وسمٌ خاصٌ يمكن أن يمثِّله.
+
+Command=
+
+Ruby=
+تحدد العلامة <ruby> تعليقًا توضيحيًا باللون الياقوتي.
+
+Data=يتم استخدام السمة data- * لتخزين البيانات المخصصة الخاصة بالصفحة أو التطبيق.
+
+Article=تحدد العلامة <article> محتوى مستقلًا ومكتفًا ذاتيًا.
+
+Install=
+
+Text= -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BOOK STORE </title>
+        <meta.charset="UTF-8" />
+    </head>
+    <body>
+        <audio controls autoplay loop>
+        <source src="الناس لما شفوكي.mp3" type="audio/mpeg">
+        <source src="الناس لما شفوكي.ogg" type="audio/ogg">
+        <source src="الناس لما شفوكي.wav" type="audio/wav">
+        Your Browser Does Not Support Audio Tags
+    </audio>
+    <video controls width="600" height="400" autoplay loop muted poster="photo_2022-10-09_12-32-56.jpg">
+        <source src="ratatouille.mp4" type="video/mp4">
+        <source src="ratatouille.ogg" type="video/ogg">
+        Your Browser Does Not Support Video Tag
+        <track src="my_file_en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="my_file_it.vtt" kind="subtitles" srclang="it" label="Italian">
+      </video>
+    </body>    
+    <header>
+        <h2>Logo</h2>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+        </ul>
+      </header>
+      <nav>
+        <nav>
+            <li>            <a href="https://www.facebook.com" target="_blank" title="go to my facebook"> link</a></li>
+            <li>            <a href="https://www.facebook.com" target="_blank" title="go to my facebook"> link</a></li>
+            <li>            <a href="https://www.facebook.com" target="_blank" title="go to my facebook"> link</a></li>
+            <li>            <a href="https://www.facebook.com" target="_blank" title="go to my facebook"> link</a></li>
+            <li>            <a href="https://www.facebook.com" target="_blank" title="go to my facebook"> link</a></li>
+            <li>            <a href="https://www.facebook.com" target="_blank" title="go to my facebook"> link</a></li>
+            <li>            <a href="https://www.facebook.com" target="_blank" title="go to my facebook"> link</a></li>
+         
+          </nav>
+
+          <section>
+            <article>
+                <h2>logo 1</h2>
+                <p>hello shady </p>
+                <p>this is my new page </p>
+            </article>
+            <hr>
+            <article>
+                <h2>logo 2</h2>
+                <p>hello  tamer</p>
+                <p>this is my new page </p>
+            </article>
+            <hr>
+            <article>
+                <h2>logo 3</h2>
+               <p> hello sameh </p>
+               <p>your welcome</p>
+            </article>
+            <hr>
+            <figure>
+                <h2>description photo</h2>
+              <img decoding="async" src="D:\my project\photo_2022-10-09_12-32-56.jpg" alt="">
+              <figcaption>Caption Of The Image</figcaption>
+            </figure>
+            <a href="https://www.facebook.com" target="_blank" title="go to my facebook"> read more</a>
+            <footer>
+                Copyright 2021 	&copy;
+              </footer>
+
+          </section>
+
+          <aside>
+           categories
+          </aside>
+
+          
+</html>
+

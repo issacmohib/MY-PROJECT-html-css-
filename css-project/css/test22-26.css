@@ -1,0 +1,49 @@
+/* div {
+    padding: 20px;
+    border: 2px solid orangered;
+    text-align: center;
+
+}
+
+p {
+    padding: inherit;
+    border: inherit;
+
+    background-color: #eee;
+
+} */
+body {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 
+.y {
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.e {
+    font-weight: 300;
+
+    font-family: 'Cairo', sans-serif;
+}
+
+.r {
+    font-weight: 300;
+
+    font-family: 'Jomhuria', cursive;
+} */
+.y {
+    font-size: 2.5rem;
+}
+
+.e {
+    font-size: 2rem;
+
+}
+
+.r {
+    font-size: 1.5rem;
+}

@@ -1,0 +1,167 @@
+/* div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.green {
+    background-color: green;
+    top: 40px;
+    left: 40px;
+    z-index: 3;
+}
+
+.red {
+    background-color: red;
+    top: 60px;
+    left: 60px;
+    z-index: 4;
+
+}
+
+.blue {
+    background-color: blue;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.black {
+    background-color: black;
+    top: 40px;
+    left: 20px;
+} */
+/* div {
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #eee;
+
+    border-color: red blue;
+    border-style: solid;
+
+}
+
+span.top-left {
+    position: relative;
+    top: -76px;
+    left: -305px;
+    background-color: blue;
+    padding: 5px;
+}
+
+span.bottom-left {
+    position: relative;
+    top: 6px;
+    left: 452px;
+    background-color: blue;
+    padding: 5px;
+}
+
+span.top-right {
+    position: relative;
+    top: 6px;
+    left: 452px;
+    background-color: blue;
+    padding: 5px;
+}
+
+span.bottom-right {
+    position: relative;
+    top: -76px;
+    left: -305px;
+    background-color: blue;
+    padding: 5px;
+} */
+/* .parent {
+    margin: 20px auto;
+    width: 400px;
+
+}
+s
+.html,
+.css,
+.java {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.html ol,
+.css ol {
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.css ol {
+    list-style-type: upper-roman;
+}
+
+.html ol li,
+.css ol li {
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+.java ul {
+    padding-left: 0;
+    margin: 10px;
+}
+
+.java ul li {
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    list-style-position: inside;
+    width: auto;
+} */
+
+table {
+    width: 700px;
+    margin: auto;
+
+}
+
+table thead td {
+    background-color: #404040;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-spacing: 1px;
+    padding: 10px;
+    margin: 10px;
+}
+
+tbody td {
+    background-color: #eee;
+    text-align: center;
+    padding: 5px;
+    border-spacing: 1px;
+}
+
+.view {
+    background-color: #03a9f4;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-style: none;
+    margin: 10px;
+
+}
+
+.delete {
+    background-color: #e91e63;
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-style: none;
+    margin: 10px;
+}
+
+caption {
+    font-weight: bold;
+    margin: 10px;
+}

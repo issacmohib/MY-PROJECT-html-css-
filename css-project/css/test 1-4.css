@@ -1,0 +1,70 @@
+/* Any Element With Class Title */
+/* اسم الصفحة  */
+.title {}
+
+/* مجموعة من اللينكات اعلي الصفحة */
+#nav {}
+
+/* تقسيم العناصر  اللي مجموعات */
+div {}
+
+/*  راس الصفحة علي حسب الحجم */
+h2 {}
+
+/* <!-- external link --> */
+<link rel="stylesheet" href="css/file.css" />
+
+/* <!-- internal link --> */
+<style>p {
+    color: red;
+}
+
+</style>
+/* <!-- internal link --> */
+<p style="color: blue;">This Is Our Paragraph</p>
+/* <!-- Write Path --> 
+ملف داخلي  */
+<link rel="stylesheet" href="css/master.css" />
+/* <!-- Write Path --> 
+ملف خارجي */
+<link rel="stylesheet" href="{ ../ main.css}" />
+/* convantion name  */
+
+/* صالح */
+._user-name {}
+
+/* صالح */
+.-user-name {}
+
+/* صالح */
+.-user-name {}
+
+/* غير صالح */
+.1user-name {}
+
+/* غير صالح */
+.@user-name {}
+
+/* غير صالح */
+.user@name {}
+
+/* صالح */
+._user10name {}
+
+/* صالح */
+.u {}
+
+/* bad */
+.USERNAME {}
+
+/* good */
+.UserName {}
+
+/* good */
+.user-name {}
+
+/* bad */
+.userName {}
+
+/* bad */
+.usernameprofile {}
